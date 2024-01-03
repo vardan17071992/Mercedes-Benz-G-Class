@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+.game {
+    height: 210px;
+    width: 850px;
+    background-image: url(images/street.png);
+    background-size: 850px 210px;
+    position: relative;
+    top: 275px;
+    left: 130px;
+}
+
+#person {
+    height: 75px;
+    width: 75px;
+    background-image: url(images/person.png);
+    background-size: 75px 75px;
+    position: relative;
+    bottom: 45px;
+    left: 170px;
+}
+
+#mers {
+    height: 80px;
+    width: 111px;
+    background-image: url(images/MERS.jpg);
+    background-size: 111px 80px;
+    position: relative;
+    top: 30px;
+    left: 950px;
+    animation: mersMove 2s infinite linear;
+}
+
+@keyframes mersMove {
+    0% {
+        left: 700px;
+    }
+    100% {
+        left: 10px;
+    }
+}
+
+.jump {
+     animation: jump 7s linear;
+}
+
+@keyframes jump{
+    0% {
+        bottom: 250px;
+    }
+
+    30% {
+       bottom: 50px;
+    }
+
+    50% {
+        bottom: 10px;
+    }
+
+    80% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: 500px;
+    }
+}
